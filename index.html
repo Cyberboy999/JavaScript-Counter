@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/Css/style.css" />
-    <title>Contador</title>
+    <title>java Projects</title>
 </head>
 <body>
-    <h1 id="separacao">Contador</h1>
+<div class="header">
+    <!--Conteudo antes das ondas-->
+    <div class="inner-header flex"></div>
+<h1 id="separacao">Contador</h1>
     <div id="counter">
         <button id="subtrair" onclick="decrement100()">-100</button>
         <button id="subtrair" onclick="decrement10()">-10</button>
@@ -17,15 +21,39 @@
         <button id="adicionar" onclick="increment10()">+10</button>
         <button id="adicionar" onclick="increment100()">+100</button>
     </div>
-    <h1 id="separacao">To-do List</h1>
-    <div id="list">
-        <form id="task-form">
-            <input id="task-input" type="text" placeholder="Digite aqui sua tarefa" />
-            <button id="task-button" type="submit">Adicionar</button>
-        </form>
-        <div id="tasks"></div>
+<h1 id="separacao">To-do List</h1>
+        <div id="list">
+            <form id="task-form">
+                <input id="task-input" type="text" placeholder="Digite aqui sua tarefa" />
+                <button id="task-button" type="submit">Adicionar</button>
+            </form>
+            <div id="tasks"></div>
+        </div>
+  
+    <!--Formacao ondas-->
+    <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+      </svg>
     </div>
-    <p id="separacao">Estes Sao Meus Primeiros Projetos Em JavaScript</p>
-    <script src="assets/Js/scripts.js"></script>
+    <!--Final formacao-->
+  
+  </div>
+  <!--Final Header-->
+  
+  <!--Inicio Conteudo-->
+  <div class="content flex">
+    <p>My first JavaScript Project </p>
+  </div>
+  <!--Final Conteudo-->
+  <script src="assets/Js/scripts.js"></script>
 </body>
 </html>

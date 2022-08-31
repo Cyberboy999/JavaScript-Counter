@@ -20,7 +20,7 @@ function TrocarCor() {
     } else if (CurrentNumber < 0) {
         RedText();
     } else {
-        document.getElementById("currentNumber").style.color = "#000000";
+        document.getElementById("currentNumber").style.color = "#ffffff";
     }
 }
 
@@ -93,15 +93,3 @@ function addTask(description) {
 
 	taskList.appendChild(taskContainer);
 }
-
-
-
-
-
-
-
-
-
-
-
-
